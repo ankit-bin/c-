@@ -5,7 +5,13 @@ void subArrPrint( int arr[],int size){
 
     for ( int i = 0; i<size;i++){
         for(int k =i ;k<=size-1;k++){
-            cout<<"("<<i<<","<<k<<") ";
+
+            for (int p = i; p <= k; p++)
+            {
+                cout<<arr[p];
+                
+            }
+            cout<<" ";
         }
         cout<<endl;
     }
